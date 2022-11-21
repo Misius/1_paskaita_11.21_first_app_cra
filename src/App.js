@@ -18,15 +18,34 @@ const card2 = (
       </div>
 );
 
+function houseGrid = {
+  return (
+  <div className="grid1">
+      {card2}
+      {card1}
+      {card2}
+      {card1}
+      {card2}
+      {card1}
+      {card2}
+      {card1}
+      {card2}
+      {card1}
+  </div>
+  );
+  };
+
 function App() {
   const name = 'James';
   return (
-    <div className="App">
+    <div className="card">
       <h1 className="">Hello {name} {150 * 30}</h1>
       <h2>{card}</h2>
-      {card2}
-      <hr />
-      {card1}
+      <houseGrid />
+
+      <div className="temItem">
+        <img src="" alt="" />
+      </div>
       
     </div>
   );
